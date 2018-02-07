@@ -1,0 +1,107 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-image: url(over.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+
+.nav-bar {
+	background: rgb(0, 0, 0, 0.5);
+	height: 80px;
+}
+
+.logo {
+	margin: 10px 50px;
+	height: 60px;
+}
+
+.menu {
+	float: right;
+	list-style: none;
+	margin: 20px;
+}
+
+.menu li {
+	display: inline-block;
+	margin: 10px 5px;
+}
+
+.menu li a {
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 10px;
+	font-family: sans-serif;
+	letter-spacing: 2px;
+	border: 1px solid #fff;
+}
+
+.menu li a:hover {
+	background: #fff;
+	transition: .4s;
+	color: #000;
+}
+
+
+.ml15 {
+  font-weight: 800;
+  font-size: 3.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+
+.ml15 .word {
+  display: inline-block;
+  line-height: 1em;
+}
+
+html, body {
+	overflow: hidden;
+}
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+.box {
+	width: 450px;
+	background: rgba(0, 0, 0, 0.4);
+	padding: 40px;
+	text-align: center;
+	margin: auto;
+	margin-top: 5%;
+	color: white;
+	font-family: 'Century Gothic', sans-serif;
+}
+
+.box-img {
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+}
+
+.box h1 {
+	font-size: 40px;
+	letter-spacing: 4px;
+	font-weight: 100;
+}
+
+.box h5 {
+	font-size: 20px;
+	letter-spacing: 3px;
+	font-weight: 100;
+}
+
+.box p {
+	text-align: justify;
+}

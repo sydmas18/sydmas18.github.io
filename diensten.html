@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="diensten.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+	<link rel="icon" href="logo.png" type="image/gif" sizes="16x16">
+	<title>Diensten</title>
+</head>
+<body>
+	<header>
+		<div class="nav-bar">
+			<img src="logo.png" class="logo">
+
+		<ul class="menu">
+			<li><a href="home.html">Home</a></li>
+			<li><a href="over.html">Over mij</a></li>
+			<li><a href="diensten.html">Diensten</a></li>
+			<li><a href="portfolio.html">Portfolio</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</div>
+
+	<div class="welcome">
+		<h1 class="ml15">
+            <span class="word">Nog geen content!</span>
+        </h1>
+	</div>
+
+	</header>
+	<script type="text/javascript">
+		anime.timeline({loop: false})
+  .add({
+    targets: '.ml15 .word',
+    scale: [14,1],
+    opacity: [0,1],
+    easing: "easeOutCirc",
+    duration: 800,
+    delay: function(el, i) {
+      return 800 * i;
+    }
+  }).add({
+    targets: '.ml15',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: false
+  });
+	</script>
+</body>
+</body>
+</html>

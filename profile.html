@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Over mij</title>
+	<script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="profile.css">
+</head>
+<body>
+	<header>
+		<div class="nav-bar">
+			<img src="logo.png" class="logo">
+
+		<ul class="menu">
+			<li><a href="home.html">Home</a></li>
+			<li><a href="over.html">Over mij</a></li>
+			<li><a href="diensten.html">Diensten</a></li>
+			<li><a href="portfolio.html">Portfolio</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+
+		<h1 class="ml15">
+            <span class="word">Over</span>
+            <span class="word">mij</span>
+        </h1>
+    
+	    <div class="box">
+		    <img src="hoofd.png" alt="" class="box-img">
+		    <h1>Mason Kleist</h1>
+		    <h3>Web devolper</h3>
+		    <p>Ik ben Mason Kleist 19 jaar oud. Ik volg momenteel de opleiding Applicatie Ontwikkelaar in Alkmaar. Ik richt mij op verschillende programmeertalen.</p>
+		</div>
+	</header>
+
+	<script type="text/javascript">
+		anime.timeline({loop: false})
+  .add({
+    targets: '.ml15 .word',
+    scale: [14,1],
+    opacity: [0,1],
+    easing: "easeOutCirc",
+    duration: 800,
+    delay: function(el, i) {
+      return 800 * i;
+    }
+  }).add({
+    targets: '.ml15',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: false
+  });
+	</script>
+</body>
+</html>
